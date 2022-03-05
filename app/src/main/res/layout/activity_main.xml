@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="@string/ladoUno"
+            android:textAlignment="center"
+            android:background="@color/gray_1"
+            />
+        <EditText
+            android:id="@+id/valorLadoUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="@string/valorUno"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/gray_1"
+            android:hint="@string/ladoDos"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/valorLadoDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="@string/valorDos" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textAlignment="center"
+            android:hint="@string/baseUno"
+            android:background="@color/gray_1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="@string/valorBaseUno"
+            android:id="@+id/valorbase"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@color/gray_1"
+
+            android:hint="@string/alturaUno"
+            android:textAlignment="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/valorAlturaUno"
+            android:textAlignment="center"
+            android:id="@+id/valorAltura"
+            />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioAreaRectangulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="área rectángulo" />
+
+            <RadioButton
+                android:id="@+id/radioAreaTriangulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="área triángulo" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="calcularAreas"
+            android:background="@drawable/rounded_button"
+            android:text="@string/send"
+            android:backgroundTint="@color/green_1"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
